@@ -108,7 +108,7 @@ function App() {
           <input
             type="text"
             className="add-input"
-            placeholder="Thêm công việc mới... ."
+            placeholder="Thêm công việc mới... ..."
             value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
           />
