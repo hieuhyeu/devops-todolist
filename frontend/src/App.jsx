@@ -20,7 +20,7 @@ function App() {
       const data = await res.json()
       setTodos(data)
     } catch (err) {
-      console.error('Lỗi kết nối server:', err)
+      console.error('Lỗi kết nối server: ', err)
     } finally {
       setLoading(false)
     }
@@ -108,7 +108,7 @@ function App() {
           <input
             type="text"
             className="add-input"
-            placeholder="Thêm công việc mới..."
+            placeholder="Thêm công việc mới... ."
             value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
           />
