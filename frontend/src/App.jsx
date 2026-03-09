@@ -100,8 +100,8 @@ function App() {
     <div className="app">
       <div className="container">
         <header className="header">
-          <h1>📝 TodoList</h1>
-          <p className="subtitle">Rikkei DevOps Practice</p>
+          <h1>📝 TodoList hieu</h1>
+          {/* <p className="subtitle">Rikkei DevOps Practice</p> */}
         </header>
 
         <form className="add-form" onSubmit={addTodo}>
@@ -171,7 +171,7 @@ function App() {
         )}
 
         <footer className="footer">
-          <p>Made with ❤️ for DevOps Practice | Rikkei Education</p>
+          {/* <p>Made with ❤️ for DevOps Practice | Rikkei Education</p> */}
         </footer>
       </div>
     </div>
