@@ -100,16 +100,15 @@ function App() {
     <div className="app">
       <div className="container">
         <header className="header">
-          <h1>📝 TodoList test</h1>
-
-          {/* <p className="subtitle">Rikkei DevOps Practice</p> */}
+          <h1>Todo</h1>
+          <p className="subtitle">Quản lý công việc đơn giản</p>
         </header>
 
         <form className="add-form" onSubmit={addTodo}>
           <input
             type="text"
             className="add-input"
-            placeholder="Thêm công việc mới... ... ..."
+            placeholder="Thêm công việc mới..."
             value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
           />
@@ -119,14 +118,14 @@ function App() {
         </form>
 
         <div className="stats">
-          <span>Tổng: {todos.length}</span>
-          <span>Hoàn thành: {completedCount}/{todos.length}</span>
+          <span>{todos.length} công việc</span>
+          <span>{completedCount} hoàn thành</span>
         </div>
 
         {loading ? (
           <div className="loading">Đang tải...</div>
         ) : todos.length === 0 ? (
-          <div className="empty">Chưa có công việc nào. Hãy thêm mới!</div>
+          <div className="empty">Chưa có công việc nào</div>
         ) : (
           <ul className="todo-list">
             {todos.map((todo) => (
@@ -156,13 +155,13 @@ function App() {
                 <div className="todo-actions">
                   {editId === todo.id ? (
                     <>
-                      <button className="btn save-btn" onClick={() => saveEdit(todo)}>💾</button>
-                      <button className="btn cancel-btn" onClick={() => setEditId(null)}>✖</button>
+                      <button className="btn save-btn" onClick={() => saveEdit(todo)}>✓</button>
+                      <button className="btn cancel-btn" onClick={() => setEditId(null)}>✕</button>
                     </>
                   ) : (
                     <>
-                      <button className="btn edit-btn" onClick={() => startEdit(todo)}>✏️</button>
-                      <button className="btn delete-btn" onClick={() => deleteTodo(todo.id)}>🗑️</button>
+                      <button className="btn edit-btn" onClick={() => startEdit(todo)}>✎</button>
+                      <button className="btn delete-btn" onClick={() => deleteTodo(todo.id)}>✕</button>
                     </>
                   )}
                 </div>
@@ -172,7 +171,7 @@ function App() {
         )}
 
         <footer className="footer">
-          {/* <p>Made with ❤️ for DevOps Practice | Rikkei Education</p> */}
+          <p>Rikkei Education — DevOps Practice</p>
         </footer>
       </div>
     </div>
