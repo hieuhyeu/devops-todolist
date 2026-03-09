@@ -100,7 +100,8 @@ function App() {
     <div className="app">
       <div className="container">
         <header className="header">
-          <h1>📝 TodoList hieu</h1>
+          <h1>📝 TodoList test</h1>
+
           {/* <p className="subtitle">Rikkei DevOps Practice</p> */}
         </header>
 
