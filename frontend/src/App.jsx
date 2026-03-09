@@ -101,7 +101,7 @@ function App() {
       <div className="container">
         <header className="header">
           <h1>Todo</h1>
-          <p className="subtitle">Quản lý công việc đơn giản</p>
+          <p className="subtitle">Quản lý công việc đơn /p>
         </header>
 
         <form className="add-form" onSubmit={addTodo}>
